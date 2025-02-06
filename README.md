@@ -11,7 +11,7 @@ Syntax to send a message from the bot:
 **/callsign-nn text of the message**<br>
 
 Command to run and make the code operational in background:
-**nohup igate_frombot.py &**<br>
+**nohup python3 igate_frombot.py &**<br>
 
 ![](https://github.com/ik5xmk/igate_frombot/blob/main/igate_frombot_01.jpg)<br>
 ![](https://github.com/ik5xmk/igate_frombot/blob/main/igate_frombot_02.jpg)

@@ -1,7 +1,7 @@
 # igate_frombot
 Receives text from a telegram bot and sends it as a message to an iGate LoRa APRS<br><br>
 
-The project, very simple, consists of a code that waits for a text from a telegram bot (it can be used the same bot used in igate_monitor or a new one) and if it starts with "/" it processes it to retrieve the recipient callsign of the message and the text to send via APRS. For this operation a second code is executed that prepares the frame and sends it on APRS using a connection in KISS to the TNC of an iGate by [CA2RXU](https://github.com/richonguzman/LoRa_APRS_iGate).<br>
+The project, very simple, consists of a code that waits for a text from a telegram bot (it can be used the same bot used in [igate_monitor](https://github.com/ik5xmk/igate_monitor) or a new one) and if it starts with "/" it processes it to retrieve the recipient callsign of the message and the text to send via APRS. For this operation a second code is executed that prepares the frame and sends it on APRS using a connection in KISS to the TNC of an iGate by [CA2RXU](https://github.com/richonguzman/LoRa_APRS_iGate).<br>
 
 Edit the igate_frombot.py code and in the configuration section specify the token of the bot you are going to use, the ip of the tnc/igate, the port, etc. These parameters will be passed to the second code (igate_sender.py) that must reside in the same folder. **To work igate_frombot.py needs the telepot library that you will have to install with pip.**<br>
 
